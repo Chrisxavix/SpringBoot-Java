@@ -1,0 +1,6 @@
+- Las clases deben de estar en el paquete inicial: mx.com.gm para que puedan ser reconocidas
+
+- RestController: Para que Spring reconozca la clase
+@RestController
+public class ControladorInicio {
+}
