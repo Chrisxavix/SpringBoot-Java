@@ -10,7 +10,12 @@
     </header>
 
     <footer th:fragment="footer">
-        <p>[[#{plantilla.pie}]]</p>
+        <div>
+            <br/>
+            <a th:href="@{/(lang=es)}">Español</a>  |
+            <a th:href="@{/(lang=en)}">English</a>  |
+            <span>[[#{plantilla.pie}]]</span>
+        </div>
     </footer>
 
 </body>
