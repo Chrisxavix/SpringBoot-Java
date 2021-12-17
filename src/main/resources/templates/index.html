@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <title>Inicio</title>
@@ -39,5 +39,11 @@
     </div>
 
     <footer th:replace="layout/plantilla :: footer"></footer>
+
+    <div>
+        <form method="POST" th:action="@{/logout}">
+            <a href="#" onclick="this.parentNode.submit();">Logout</a>
+        </form>
+    </div>
 </body>
 </html>
